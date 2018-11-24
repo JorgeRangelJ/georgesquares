@@ -8,9 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'George Square';
   lugares:any = [
-    {nombre: 'Floristeria'},
-    {nombre: 'Panaderia'},
-    {nombre: 'Veterinaria'}
+    {active: true, nombre: 'Floristeria'},
+    {active: true, nombre: 'Panaderia'},
+    {active: true, nombre: 'Veterinaria'},
+    {active: false, nombre: 'Licorera'},
+    {active: true, nombre: 'Drogueria'}
   ];
 
   constructor() {
