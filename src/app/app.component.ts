@@ -15,6 +15,9 @@ export class AppComponent {
     {active: true, nombre: 'Drogueria'}
   ];
 
+  lat:number = 4.8492754;
+  lng:number = -74.0619274;
+
   constructor() {
     
   }
