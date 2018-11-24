@@ -17,4 +17,8 @@ export class AppComponent {
     }, 3000);
   }
 
+  hacerAlgo() {
+    alert("haciendo algo!");
+  }
+
 }
