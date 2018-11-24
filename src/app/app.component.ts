@@ -7,19 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'George Square';
-  a = 2;
-  b = 5;
-  listo = false;
-  nombre = '';
+  lugares:any = [
+    {nombre: 'Floristeria'},
+    {nombre: 'Panaderia'},
+    {nombre: 'Veterinaria'}
+  ];
 
   constructor() {
-    setTimeout(() => {
-      this.listo = true;
-    }, 3000);
-  }
-
-  hacerAlgo() {
-    alert("haciendo algo!");
+    
   }
 
 }
