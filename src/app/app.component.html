@@ -8,3 +8,9 @@
     <li *ngIf="lugar.active" >{{ lugar.nombre }}</li>
   </ng-container>
 </ul>
+
+<ul>
+  <ng-container *ngFor="let lugar of lugares">
+    <li [ngStyle]="{color: (lugar.active) ? 'black' : 'gray'}" [ngClass]="'numero_par'" >{{ lugar.nombre }}</li>
+  </ng-container>
+</ul>
