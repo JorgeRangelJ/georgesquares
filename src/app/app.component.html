@@ -10,7 +10,11 @@
 </ul>
 
 <ul>
-  <ng-container *ngFor="let lugar of lugares">
-    <li [ngStyle]="{color: (lugar.active) ? 'black' : 'gray'}" [ngClass]="'numero_par'" >{{ lugar.nombre }}</li>
+  <ng-container *ngFor="let lugar of lugares" [ngSwitch]="lugar.cercania">
+    <li [ngStyle]="{color: (lugar.active) ? 'black' : 'gray'}" [ngClass]="'numero_par'" >{{ lugar.nombre }} -
+      <span *ngSwitchCase="1" [ngStyle]="{color: 'green'}">Muy cercano</span>
+      <span *ngSwitchCase="2" [ngStyle]="{color: 'black'}">Cercano</span>
+      <span *ngSwitchCase="3" [ngStyle]="{color: 'red'}">Lejano</span>
+    </li>
   </ng-container>
 </ul>

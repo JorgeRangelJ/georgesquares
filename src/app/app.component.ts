@@ -8,11 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'George Square';
   lugares:any = [
-    {active: true, nombre: 'Floristeria'},
-    {active: true, nombre: 'Panaderia'},
-    {active: true, nombre: 'Veterinaria'},
-    {active: false, nombre: 'Licorera'},
-    {active: true, nombre: 'Drogueria'}
+    {cercania: 1, distancia: 1, active: true, nombre: 'Floristeria'},
+    {cercania: 2, distancia: 1.8, active: true, nombre: 'Panaderia'},
+    {cercania: 1, distancia: 5, active: true, nombre: 'Veterinaria'},
+    {cercania: 3, distancia: 10, active: false, nombre: 'Licorera'},
+    {cercania: 4, distancia: 30, active: true, nombre: 'Drogueria'}
   ];
 
   lat:number = 4.8492754;
